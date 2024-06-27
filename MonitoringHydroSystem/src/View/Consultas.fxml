@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConsultasController">
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #133340;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="74.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bem Vindo(a)" wrappingWidth="76.70635986328125" AnchorPane.bottomAnchor="18.666666666666664" AnchorPane.leftAnchor="74.0" AnchorPane.rightAnchor="857.9603068033854" AnchorPane.topAnchor="19.0" />
+            <TextField fx:id="txtNomePerfil" layoutX="151.0" layoutY="11.0" prefHeight="30.0" prefWidth="120.0" promptText="Giovanna" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Text fill="WHITE" layoutX="271.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edifício" wrappingWidth="63.373046875" />
+            <TextField fx:id="txtNomeEdifcio" layoutX="334.0" layoutY="12.0" prefHeight="30.0" prefWidth="130.0" promptText="Copan" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Text fill="WHITE" layoutX="464.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código" wrappingWidth="63.373046875" />
+            <TextField fx:id="txtCódigo" layoutX="527.0" layoutY="13.0" prefHeight="30.0" prefWidth="40.0" promptText="3" style="-fx-background-color: transparent;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/icons8-male-user-32.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="100.0" layoutX="1046.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/LOGO.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="panelMenu" prefHeight="360.0" prefWidth="143.0" style="-fx-background-color: #8AA3A6;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="80.0" prefHeight="254.0" prefWidth="46.0" spacing="20.0" AnchorPane.bottomAnchor="24.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="80.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/icons8-combo-chart-32.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/icons8-home-32.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/icons8-customer-32.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="32.0" layoutX="17.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../IMG/icons8-logout-32.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Button fx:id="btnConsultaC" layoutX="72.0" layoutY="80.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="Consultas" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnInicioC" layoutX="72.0" layoutY="128.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="Início" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPerfilC" layoutX="72.0" layoutY="180.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="Perfil" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogout" layoutX="72.0" layoutY="272.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="Sair" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F1F2F0;" BorderPane.alignment="CENTER">
+         <children>
+            <AreaChart fx:id="chartAno" layoutX="51.0" layoutY="35.0" prefHeight="189.0" prefWidth="339.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+            <AreaChart fx:id="chartMes" layoutX="551.0" layoutY="35.0" prefHeight="189.0" prefWidth="339.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+            <AreaChart fx:id="chartDia" layoutX="305.0" layoutY="224.0" prefHeight="189.0" prefWidth="339.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

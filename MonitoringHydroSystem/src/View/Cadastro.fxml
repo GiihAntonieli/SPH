@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CadastroController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #133340;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="205.0" fitWidth="185.0" layoutX="33.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../IMG/LOGO.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F1F2F0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="43.0" layoutY="51.0" text="Nome do Edifício" />
+            <Label layoutX="43.0" layoutY="110.0" text="Endereço" />
+            <Label layoutX="43.0" layoutY="161.0" text="Nome do usuário" />
+            <Label layoutX="43.0" layoutY="213.0" text="Email" />
+            <Label layoutX="43.0" layoutY="266.0" text="Senha" />
+            <TextField fx:id="txtNomeEdificio" layoutX="149.0" layoutY="47.0" />
+            <TextField fx:id="txtEndereco" layoutX="149.0" layoutY="106.0" />
+            <TextField fx:id="txtNomeUsuario" layoutX="149.0" layoutY="157.0" />
+            <TextField fx:id="txtEmail" layoutX="149.0" layoutY="209.0" />
+            <TextField fx:id="txtSenha" layoutX="149.0" layoutY="262.0" />
+            <Button fx:id="btnCadastrar" layoutX="189.0" layoutY="332.0" mnemonicParsing="false" onAction="#Cadastrar" style="-fx-background-color: #8AA3A6;" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnVoltar" layoutX="72.0" layoutY="332.0" mnemonicParsing="false" prefWidth="82.0" style="-fx-background-color: #8AA3A6;" text="Voltar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
